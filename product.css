@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    color: #fff;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: lightblue;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    background-color: dimgray;
+    padding: 0.7rem;
+    font-size: 18px;
+    width: 20%;
+    height: 3.3rem;
+    align-items: center;
+    margin-top: 1px;
+}
+nav{
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    background-color: darkgray;
+    display: flex;
+    justify-content: space-evenly;
+    height: 3.3rem;
+    margin-top: 1px;
+
+
+}
+
+nav ul li {
+    margin-right: 0;
+    width: calc(100% / 3);
+
+
+}
+
+nav ul li a {
+
+    text-decoration: none;
+    color: black;
+    line-height: 50px;
+
+
+}
+li a:hover{
+    color: #f0f0f0;
+}
+
+main {
+    padding: 20px;
+    background-color: #d0cccc;
+
+}
+
+.image1 {
+
+    width: 100%;
+    height: auto;
+
+}
+
+.wrapper{
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+article {
+    width: 100%;
+    padding: 1rem;
+}
+
+
+figure{
+
+    text-align: center;
+}
+
+.image2, .image3,
+.image4{
+    width: 100%;
+    height: auto;
+}
+
+aside{
+    width: 100%;
+}
+    /* Style the footer */
+footer {
+    padding: 20px;
+    color: #1f2023;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    header h1 {
+        width: 10%;
+    }
+
+    nav ul li {
+        width: auto;
+    }
+
+    article {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    article {
+        width: 33.33%;
+    }
+
+}

@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+header {
+    display: flex;
+    text-align: left;
+
+    color: #fff;
+}
+
+header h1 {
+    background-color: dimgray;
+    padding: 1rem;
+    line-height: 20px;
+    margin: 0;
+    font-size: 20px;
+    color: white;
+    width: 15%;
+}
+nav{
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    background-color: darkgray;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    line-height: 52px;
+
+}
+li a:hover{
+    color: #f0f0f0;
+}
+
+
+main {
+    padding: 20px;
+    background-color: #d0cccc;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content {
+    flex: 2;
+}
+
+h2, p {
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.image-container {
+    flex: 1;
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    .content, .image-container {
+        flex: 100%;
+    }
+}
